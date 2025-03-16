@@ -10,12 +10,12 @@ public class StepDefinitions {
     int result = 0;
     Calculator calculator;
 
-    @Допустим("^калькулятор запущен$")
+    @Допустим("калькулятор запущен")
     void calcHasStarted()
     {
         calculator = new Calculator();
     }
-    @Когда("^пользователь вводит (\\d+) и (\\d+) и жмёт \"Сложить\"$")
+    @Когда("пользователь вводит {int} и {int} и жмёт {string}$")
     void addNumbers(int a, int b)
     {
         result = calculator.add(a,b);
