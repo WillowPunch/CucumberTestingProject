@@ -1,10 +1,14 @@
 package stepdefinitions;
 
-import io.cucumber.java.ru.Допустим;
-import io.cucumber.java.ru.Когда;
-import io.cucumber.java.ru.Тогда;
+import io.cucumber.java.ru.*;
 import com.example.cucumber.Calculator;
+import org.junit.Before;
+
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class StepDefinitions {
     int result = 0;
